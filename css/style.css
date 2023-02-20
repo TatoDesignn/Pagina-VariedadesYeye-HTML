@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root{
+    --colorfuente: #333333;
+    --colortitulo: #ffffff;
+    --claro: #FFB7C2;
+    --oscuro: #FE889F;
+    --fuente: 'Roboto Mono', monospace;
+    --boton: #662d90;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #eee;
+}
+
+nav{
+    width: 100%;
+    height: 8.0rem;
+    background-color: var(--oscuro);
+    display: grid;
+    place-items: center;
+}
+
+.logo{
+    padding-top: 0.7rem;
+}
+
+.logo img{
+    width: 15.0rem;
+    height: 8.0rem;
+    margin: 0;
+}
+
+.carrito{
+    position: absolute;
+    right: 3.5rem;
+}
+
+.carrito img{
+    width: 4.0rem;
+    margin: 0;
+}
+
+.nav-menu{
+    width: 100%;
+    height: 3.0rem;
+    background-color: var(--colortitulo);
+    margin-bottom: 3.0rem;
+    display: grid;
+    place-items: center;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: var(--colorfuente);
+}
+
+.nav-menu li{
+    display: inline-block;
+    list-style: none;
+    font-size: 2.0rem;
+    padding-left: 2.0rem;
+    font-family: var(--fuente);
+}
+
+.nav-menu a:hover{
+    color: var(--oscuro);
+}
+
+.nav-menu a:active{
+    color: var(--oscuro);
+}
+
+.main-bienvenida{
+    background-color: var(--claro);
+    border-bottom: 0.2rem solid var(--oscuro);
+
+    width: 100%;
+    height: 20.0rem;
+    padding: 2.0rem 5.0rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-bienvenida h1{
+    color: var(--colortitulo);
+    padding-bottom: 0.5rem;
+    font-size: 2.6rem;
+    font-family: var(--fuente);
+}
+
+.main-bienvenida img{
+    width: 12.3rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 14.0rem;
+}
+
+.main-bienvenida p{
+    margin-right: 5.0rem;
+    font-family: var(--fuente);
+}
+
+.main-productos{
+    width: 100%;
+    height: 90.0rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 3.0rem 5.0rem;
+}
+
+.main-productos h1{
+    font-family: var(--fuente);
+    color: var(--colorfuente);
+    font-size: 2.6rem;
+}
+
+.producto1{
+    background-color: var(--colortitulo);
+    border-radius: 1.0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding: 4.0rem;
+    font-family: var(--fuente);
+    width: 25.0rem;
+    height: 250px;
+    margin-top: 12.0rem;
+}
+
+.producto2{
+    background-color: var(--colortitulo);
+    border-radius: 1.0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding: 4.0rem;
+    font-family: var(--fuente);
+    width: 25.0rem;
+    height: 250px;
+    margin-top: 17.0rem;
+}
+
+.producto1::after{
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    background: black;
+    width: 95%;
+    height: 95%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.producto1 p{
+    position: relative;
+    top: 1.0rem;
+}
+
+.producto1 img{
+    width: 15.0rem;
+    position: absolute;
+    bottom: 20.0rem;
+}
+
+.producto1 label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 2.0rem;
+}
+
+.producto1 span{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1.0rem;
+    font-size: 1.4rem;
+}
+
+.producto1 button{
+    width: 10.0rem;
+    height: 2.5rem;
+    border-radius: 5.0rem;
+    color: var(--colortitulo);
+    background-color: var(--boton);
+    border: 0.1rem solid #321943;
+}
+
+.producto2::after{
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    background: black;
+    width: 95%;
+    height: 95%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.producto2 img{
+    position: absolute;
+    width: 18.0rem;
+    bottom: 19.0rem;
+    rotate: 8;
+}
+
+.producto2 p{
+    position: relative;
+    top: 2.0rem;
+}
+
+.producto2 label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 3.0rem;
+}
+
+
+.producto2 span{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1.0rem;
+    font-size: 1.4rem;
+}
+
+.producto2 button{
+    width: 10.0rem;
+    height: 2.5rem;
+    border-radius: 5.0rem;
+    color: var(--colortitulo);
+    background-color: var(--boton);
+    border: 0.1rem solid #321943;
+}
+
+.main-contacto{
+    width: 100%;
+    height: 20.0rem;
+    margin-bottom: 4.0rem;
+    background-color: var(--claro);
+    font-family: var(--fuente);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colortitulo);
+    border-bottom: 0.2rem solid var(--oscuro);
+}
+
+.Email{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}  
+
+.Email input{
+    border-radius: 0.5rem;
+    position: relative;
+    width: 16.0rem;
+    height: 2.8rem;
+}
+
+
+.Email span{
+    color: var(--colorfuente);
+    position: absolute;
+    top: 0.2rem;
+    left: 1.5rem;
+}
+
+.texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}  
+
+
+.texto input{
+    border-radius: 0.5rem;
+    position: relative;
+    width: 30.0rem;
+    height: 6.0rem;
+}
+
+.texto span{
+    color: var(--colorfuente);
+    position: absolute;
+    top: 0.2rem;
+    left: 1.5rem;
+}
+
+.enviar2 {
+    width: 6.0rem;
+    border-radius: 5.0rem;
+    position: relative;
+    background-color: var(--boton);
+    color: var(--colortitulo);
+    left: 25.0rem;
+}
+
+.Pie{
+    background-color: var(--oscuro);
+    width: 100%;
+    height: 6.0rem;
+    color: var(--colortitulo);
+    display: flex;
+    font-family: var(--fuente);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px){
+
+    .main-bienvenida{
+        background-color: var(--claro);
+        border-bottom: 0.2rem solid var(--oscuro);
+        width: 100%;
+        height: 20.0rem;
+        padding: 4.0rem 5.0rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-bienvenida h1{
+        padding-bottom: 0;
+        height: 3.0rem;
+    }    
+
+    .main-contacto{
+        height: 25.0rem;
+    }
+    
+}
+
+@media (min-width: 800px){
+    
+    nav{
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .nav-menu{
+        width: 800px;
+        margin-bottom: 3.0rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 3.0rem;
+    }
+
+    .main-bienvenida{
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .main-bienvenida img{
+        top: 0rem;
+    }
+
+    .main-productos{
+        width: 800px;
+        height: 60.0rem;
+        margin: 0 auto;
+        padding: 0 1.0rem;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        justify-content: space-evenly;
+        align-content: center;
+        border-left: 0.2rem solid var(--oscuro);
+        border-right: 0.2rem solid var(--oscuro);
+    }
+
+    .main-productos h1{
+        width: 800px;
+        display: grid;
+        place-items: center;
+    }
+
+    .producto2{
+        margin-top: 12.0rem;
+    }
+
+    .main-contacto{
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .Pie{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
